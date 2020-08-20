@@ -1,1 +1,24 @@
 @import "reset.css";
+.content {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url(../images/header/Layer_16.png);
+  height: 100vh;
+  background-size: cover;
+  padding-top: 47px;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  display: grid;
+  width: 700px;
+  text-align: center;
+  grid-template: 1fr/repeat(5, 1fr);
+}

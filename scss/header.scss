@@ -1,0 +1,17 @@
+.header {
+    background: url(../images/header/Layer_16.png);
+    height: 100vh;
+    background-size: cover;
+    padding-top: 47px;
+    &__top {
+        @include flex-spb;
+    }
+    &__nav {
+        display: grid;
+        width: 700px;
+        text-align: center;
+        grid-template:  1fr /repeat(5,1fr) ;
+    }
+}
+.link {
+}
