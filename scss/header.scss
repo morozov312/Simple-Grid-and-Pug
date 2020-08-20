@@ -14,7 +14,7 @@
         padding-left: 2px;
     }
     &__logo {
-        object-fit: cover;
+        max-width: 100%;
     }
     &__nav {
         display: flex;
@@ -26,25 +26,25 @@
         @include link(#fff);
     }
     &__intro {
-        margin-top: (180px/901px) * 100%;
+        margin-top: 293px;
         text-align: center;
     }
     &__title {
         h1 {
             color: #ffffff;
             font-family: "Proxima Nova Light";
-            font-size: 60px;
+            @include adaptive-font(60, 27);
             text-transform: uppercase;
             font-weight: 300;
-            letter-spacing: 36px;
+            letter-spacing: 0.6em;
         }
         p {
             color: #f84545;
             font-family: "Proxima Nova rg";
             text-transform: uppercase;
-            font-size: 30px;
+            @include adaptive-font(30, 25);
             font-weight: 700;
-            letter-spacing: 12px;
+            letter-spacing: 0.4em;
             margin-top: 50px;
         }
     }

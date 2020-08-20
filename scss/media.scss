@@ -1,4 +1,3 @@
-@import "variables.scss";
 // 4K 
 @media (min-width: $k4) {
 }
@@ -7,9 +6,15 @@
     .header__nav{
         display: none;
     }
+    .header__intro{
+        margin-top: 200px;
+    }
 }
 // MobileL 
 @media (max-width: $mobileL) {
+    .header__logo{
+        width: 45%;
+    }
 }
 // MobileM 
 @media (max-width: $mobileM) {

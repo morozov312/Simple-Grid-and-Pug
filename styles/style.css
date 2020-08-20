@@ -47,7 +47,7 @@
   padding-left: 2px;
 }
 .header__logo {
-  object-fit: cover;
+  max-width: 100%;
 }
 .header__nav {
   display: flex;
@@ -68,24 +68,24 @@
   transition: color 0.3s linear;
 }
 .header__intro {
-  margin-top: 19.9778024417%;
+  margin-top: 293px;
   text-align: center;
 }
 .header__title h1 {
   color: #ffffff;
   font-family: "Proxima Nova Light";
-  font-size: 60px;
+  font-size: calc(27px + 33 * ((100vw - 320px) / 1380));
   text-transform: uppercase;
   font-weight: 300;
-  letter-spacing: 36px;
+  letter-spacing: 0.6em;
 }
 .header__title p {
   color: #f84545;
   font-family: "Proxima Nova rg";
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: calc(25px + 5 * ((100vw - 320px) / 1380));
   font-weight: 700;
-  letter-spacing: 12px;
+  letter-spacing: 0.4em;
   margin-top: 50px;
 }
 .header__arrow {
@@ -99,5 +99,14 @@
 @media (max-width: 1023px) {
   .header__nav {
     display: none;
+  }
+
+  .header__intro {
+    margin-top: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .header__logo {
+    width: 45%;
   }
 }
