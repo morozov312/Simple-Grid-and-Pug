@@ -2,16 +2,57 @@
     background: url(../images/header/Layer_16.png);
     height: 100vh;
     background-size: cover;
+    background-position: center;
     padding-top: 47px;
+    box-sizing: border-box;
+    &__wrap {
+        position: relative;
+    }
     &__top {
         @include flex-spb;
+        box-sizing: border-box;
+        padding-left: 2px;
+    }
+    &__logo {
+        object-fit: cover;
     }
     &__nav {
-        display: grid;
-        width: 700px;
-        text-align: center;
-        grid-template:  1fr /repeat(5,1fr) ;
+        display: flex;
+        width: 100%;
+        max-width: 700px;
+        justify-content: space-between;
     }
-}
-.link {
+    &__link {
+        @include link(#fff);
+    }
+    &__intro {
+        margin-top: (180px/901px) * 100%;
+        text-align: center;
+    }
+    &__title {
+        h1 {
+            color: #ffffff;
+            font-family: "Proxima Nova Light";
+            font-size: 60px;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 36px;
+        }
+        p {
+            color: #f84545;
+            font-family: "Proxima Nova rg";
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 12px;
+            margin-top: 50px;
+        }
+    }
+    &__arrow {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        bottom: 0+70px;
+    }
 }

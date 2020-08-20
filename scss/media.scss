@@ -4,6 +4,9 @@
 }
 // Tablet 
 @media (max-width: $tablet) {
+    .header__nav{
+        display: none;
+    }
 }
 // MobileL 
 @media (max-width: $mobileL) {

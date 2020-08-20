@@ -1,19 +1,34 @@
-// desctop first
+// This project variables
+@mixin link($color) {
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 7.88px;
+    color: $color;
+    &:hover {
+        color: #f84545;
+        transition: $col_tr;
+    }
+}
+// !!! my variables templates !!!
+// breakpoints, desktop first
 $k4: 1441px; // min
 $tablet: 1023px; // max
 $mobileL: 767px; // max
 $mobileM: 424px; // max
 $mobileS: 376px; // max
 // transition
-$bgc_tr: background-color 0.3 linear;
-$op_tr: opacity 0.3 linear;
+$bgc_tr: background-color 0.3s linear;
+$op_tr: opacity 0.3s linear;
+$col_tr: color 0.3s linear;
 // flex
 @mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@mixin flex-spb{
+@mixin flex-spb {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,4 +58,10 @@ $op_tr: opacity 0.3 linear;
         @include form-font;
     }
 }
-// .... other project variables ....
+// adaptiv font
+$maxWidth: 1700;
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
