@@ -26,18 +26,10 @@
         @include link(#fff);
     }
     &__intro {
-        margin-top: (160px/895px)*100%;
+        margin-top: (160px/895px) * 100%;
         text-align: center;
     }
     &__title {
-        h1 {
-            color: #ffffff;
-            font-family: "Proxima Nova Light";
-            @include adaptive-font(60, 27);
-            text-transform: uppercase;
-            font-weight: 300;
-            letter-spacing: 0.6em;
-        }
         p {
             color: #f84545;
             font-family: "Proxima Nova rg";
@@ -53,6 +45,6 @@
         justify-content: center;
         width: 100%;
         position: absolute;
-        bottom: 0+(70px/895px)*100%;
+        bottom: 0+ (70px/895px) * 100%;
     }
 }

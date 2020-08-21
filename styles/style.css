@@ -28,6 +28,24 @@
   height: 100%;
 }
 
+.h1, .h3, .h2 {
+  color: #ffffff;
+  font-family: "Proxima Nova Light";
+  font-size: calc(27px + 33 * ((100vw - 320px) / 1380));
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.6em;
+}
+
+.h2 {
+  letter-spacing: 0.34em;
+}
+
+.h3 {
+  font-size: calc(20px + 20 * ((100vw - 320px) / 1380));
+  letter-spacing: 0.4em;
+}
+
 .header {
   background: url(../images/header/Layer_16.png);
   height: 100vh;
@@ -71,14 +89,6 @@
   margin-top: 17.8770949721%;
   text-align: center;
 }
-.header__title h1 {
-  color: #ffffff;
-  font-family: "Proxima Nova Light";
-  font-size: calc(27px + 33 * ((100vw - 320px) / 1380));
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 0.6em;
-}
 .header__title p {
   color: #f84545;
   font-family: "Proxima Nova rg";
@@ -94,6 +104,44 @@
   width: 100%;
   position: absolute;
   bottom: 7.8212290503%;
+}
+
+.tiles {
+  padding: 83px 0;
+}
+.tiles__wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 580px;
+  grid-gap: 53px 57px;
+  justify-items: center;
+}
+.tiles__item {
+  position: relative;
+  max-height: 100%;
+  z-index: -1;
+}
+.tiles__item--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tiles__item--big {
+  grid-column: 1/2 span;
+}
+.tiles__description {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 38px;
+}
+.tiles__h2 {
+  margin-top: 36px;
+  margin-bottom: 60px;
+}
+.tiles__h3 {
+  margin-top: 36px;
+  margin-bottom: 39px;
 }
 
 @media (max-width: 1023px) {

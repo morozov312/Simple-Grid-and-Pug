@@ -1,0 +1,38 @@
+.tiles {
+    padding: 83px 0;
+    &__wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 580px;
+        grid-gap: 53px 57px;
+        justify-items: center;
+    }
+    &__item {
+        position: relative;
+        max-height: 100%;
+        z-index: -1;
+        &--left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &--big {
+            grid-column: 1 / 2 span;
+          
+        }
+    }
+    &__description {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 38px;
+    }
+    &__h2 {
+        margin-top: 36px;
+        margin-bottom: 60px;
+    }
+    &__h3 {
+        margin-top: 36px;
+        margin-bottom: 39px;
+    }
+}
