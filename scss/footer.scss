@@ -1,0 +1,22 @@
+.footer {
+    height: 150px;
+    overflow: hidden;
+    &__wrap {
+        @include flex-spb;
+    }
+    &__nav {
+        width: 100%;
+        max-width: 993px;
+    }
+    &__link{
+        @include link(#1a1a1a);
+    }
+    &__ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link--hover-none:hover{
+        color:inherit ;
+    }
+  
+}
