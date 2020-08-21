@@ -29,22 +29,14 @@
         margin-top: (160px/895px) * 100%;
         text-align: center;
     }
-    &__title {
-        p {
-            color: #f84545;
-            font-family: "Proxima Nova rg";
-            text-transform: uppercase;
-            @include adaptive-font(30, 25);
-            font-weight: 700;
-            letter-spacing: 0.4em;
-            margin-top: 50px;
-        }
+    &__subtitle {
+        margin-top: 50px;
     }
     &__arrow {
         display: flex;
         justify-content: center;
         width: 100%;
         position: absolute;
-        bottom: 0+ (70px/895px) * 100%;
+        bottom: 0 + (70px/895px) * 100%;
     }
 }

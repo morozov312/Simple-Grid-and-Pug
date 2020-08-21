@@ -1,0 +1,27 @@
+.instagram {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    overflow: hidden;
+    source, img {
+        height: 100%;
+        object-fit: cover;
+    }
+    &__description{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+    &__title{
+        letter-spacing: 0.65em;
+    }
+    &__subtitile{
+        margin-top: 50px;
+    }
+}

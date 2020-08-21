@@ -28,6 +28,15 @@
   height: 100%;
 }
 
+.subtitle {
+  color: #f84545;
+  font-family: "Proxima Nova rg";
+  text-transform: uppercase;
+  font-size: calc(25px + 5 * ((100vw - 320px) / 1380));
+  font-weight: 700;
+  letter-spacing: 0.4em;
+}
+
 .h1, .h3, .h2 {
   color: #ffffff;
   font-family: "Proxima Nova Light";
@@ -89,13 +98,7 @@
   margin-top: 17.8770949721%;
   text-align: center;
 }
-.header__title p {
-  color: #f84545;
-  font-family: "Proxima Nova rg";
-  text-transform: uppercase;
-  font-size: calc(25px + 5 * ((100vw - 320px) / 1380));
-  font-weight: 700;
-  letter-spacing: 0.4em;
+.header__subtitle {
   margin-top: 50px;
 }
 .header__arrow {
@@ -143,6 +146,34 @@
 .tiles__h3 {
   margin-top: 0.9em;
   margin-bottom: 1em;
+}
+
+.instagram {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+  overflow: hidden;
+}
+.instagram source, .instagram img {
+  height: 100%;
+  object-fit: cover;
+}
+.instagram__description {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.instagram__title {
+  letter-spacing: 0.65em;
+}
+.instagram__subtitile {
+  margin-top: 50px;
 }
 
 @media (max-width: 1023px) {

@@ -36,6 +36,14 @@
 	margin: 0 auto;
 	height: 100%;
 }
+.subtitle {
+	color: #f84545;
+	font-family: "Proxima Nova rg";
+	text-transform: uppercase;
+	@include adaptive-font(30, 25);
+	font-weight: 700;
+	letter-spacing: 0.4em;
+}
 .h1 {
 	color: #ffffff;
 	font-family: "Proxima Nova Light";
