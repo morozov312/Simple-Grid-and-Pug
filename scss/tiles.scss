@@ -6,6 +6,7 @@
         grid-template-rows: 1fr 580px;
         grid-gap: 53px 57px;
         justify-items: center;
+        overflow: scroll;
     }
     &__item {
         position: relative;
@@ -28,11 +29,11 @@
         left: 38px;
     }
     &__h2 {
-        margin-top: 36px;
-        margin-bottom: 60px;
+        margin-top: 0.6em;
+        margin-bottom: 1em;
     }
     &__h3 {
-        margin-top: 36px;
-        margin-bottom: 39px;
+        margin-top: 0.9em;
+        margin-bottom: 1em;
     }
 }

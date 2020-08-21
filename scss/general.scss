@@ -50,6 +50,6 @@
 }
 .h3 {
 	@extend .h1;
-	@include adaptive-font(40, 20);
+	@include adaptive-font(40, 24);
 	letter-spacing: 0.4em;
 }
