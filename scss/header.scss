@@ -26,7 +26,7 @@
         @include link(#fff);
     }
     &__intro {
-        margin-top: 293px;
+        margin-top: (160px/895px)*100%;
         text-align: center;
     }
     &__title {
@@ -53,6 +53,6 @@
         justify-content: center;
         width: 100%;
         position: absolute;
-        bottom: 0+70px;
+        bottom: 0+(70px/895px)*100%;
     }
 }

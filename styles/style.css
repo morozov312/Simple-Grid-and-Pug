@@ -68,7 +68,7 @@
   transition: color 0.3s linear;
 }
 .header__intro {
-  margin-top: 293px;
+  margin-top: 17.8770949721%;
   text-align: center;
 }
 .header__title h1 {
@@ -93,7 +93,7 @@
   justify-content: center;
   width: 100%;
   position: absolute;
-  bottom: 70px;
+  bottom: 7.8212290503%;
 }
 
 @media (max-width: 1023px) {
