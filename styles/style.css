@@ -156,8 +156,10 @@
   grid-template: repeat(2, 1fr)/repeat(4, 1fr);
   overflow: hidden;
 }
-.instagram source, .instagram img {
+.instagram source,
+.instagram img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .instagram__description {
@@ -207,6 +209,21 @@
 }
 .footer__link--hover-none:hover {
   color: inherit;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 160px;
+}
+.icons svg {
+  width: 33.33%;
+  height: 1.6em;
+}
+.icons svg:hover {
+  fill: #f84545;
+  transition: fill 0.3s linear;
 }
 
 @media (max-width: 1023px) {

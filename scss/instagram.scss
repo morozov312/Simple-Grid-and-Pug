@@ -5,11 +5,13 @@
     position: relative;
     grid-template: repeat(2, 1fr) / repeat(4, 1fr);
     overflow: hidden;
-    source, img {
+    source,
+    img {
         height: 100%;
+        width: 100%;
         object-fit: cover;
     }
-    &__description{
+    &__description {
         position: absolute;
         width: 100%;
         text-align: center;
@@ -18,10 +20,10 @@
         transform: translate(-50%, -50%);
         z-index: 10;
     }
-    &__title{
+    &__title {
         letter-spacing: 0.65em;
     }
-    &__subtitile{
+    &__subtitile {
         margin-top: 50px;
     }
 }

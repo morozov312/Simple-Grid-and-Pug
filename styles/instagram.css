@@ -1,4 +1,0 @@
-.instagram {
-  display: grid;
-  grid-template: repeat(5, 1fr)/repeat(2, 1fr);
-}

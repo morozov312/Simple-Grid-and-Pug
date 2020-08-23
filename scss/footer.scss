@@ -8,15 +8,26 @@
         width: 100%;
         max-width: 993px;
     }
-    &__link{
+    &__link {
         @include link(#1a1a1a);
     }
     &__ul {
         display: flex;
         justify-content: space-between;
     }
-    &__link--hover-none:hover{
-        color:inherit ;
+    &__link--hover-none:hover {
+        color: inherit;
     }
-  
+}
+.icons {
+    @include flex-spb;
+    max-width: 160px;
+    svg {
+        width: 33.33%;
+        height: 1.6em;
+        &:hover {
+            fill: #f84545;
+            transition: fill 0.3s linear;
+        }
+    }
 }
