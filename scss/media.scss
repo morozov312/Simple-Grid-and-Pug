@@ -1,5 +1,13 @@
 // 4K 
-@media (min-width: $k4) {
+@media (max-width: $k4) {
+    .content{
+        max-width: 1200px;
+    }
+}
+@media (max-width: 1200px) {
+    .content{
+        max-width: 950px;
+    }
 }
 // Tablet 
 @media (max-width: $tablet) {

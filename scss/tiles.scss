@@ -2,16 +2,22 @@
     padding: 83px 0;
     &__wrap {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 580px;
+        grid-template-columns: repeat(3, 30.8%);
+        grid-template-rows: 1fr 41%;
         grid-gap: 53px 57px;
         justify-items: center;
-        overflow: scroll;
+        overflow: hidden;
     }
     &__item {
         position: relative;
         max-height: 100%;
         z-index: -1;
+        picture {
+            img,
+            source {
+                max-width: 100%;
+            }
+        }
         &--left {
             display: flex;
             flex-direction: column;
@@ -19,7 +25,6 @@
         }
         &--big {
             grid-column: 1 / 2 span;
-          
         }
     }
     &__description {
