@@ -1,16 +1,23 @@
 header.header
     .content.header__wrap
         .header__top
-            img.header__logo(src="./images/header/logo.png", alt="logo")
+            a.logo(href="https://github.com/morozov312/Simple-Grid-and-Pug" target="__blank")
+                img.logo__img(src="./images/header/logo.png" alt="logo") 
             nav.header__nav
-                a.header__link(href="#") MENS
-                a.header__link(href="#") WOMENS
-                a.header__link(href="#") BRANDS
-                a.header__link(href="#") SALE
-                a.header__link(href="#") NEWS
+                ul.header__list
+                    li
+                        a.header__link(href="https://github.com/morozov312/Simple-Grid-and-Pug" target="__blank") MENS
+                    li
+                        a.header__link(href="https://github.com/morozov312/Simple-Grid-and-Pug" target="__blank") WOMENS
+                    li
+                        a.header__link(href="https://github.com/morozov312/Simple-Grid-and-Pug" target="__blank") BRANDS
+                    li
+                        a.header__link(href="https://github.com/morozov312/Simple-Grid-and-Pug" target="__blank") SALE
+                    li
+                        a.header__link(href="https://github.com/morozov312/Simple-Grid-and-Pug" target="__blank") NEWS
         .header__intro
             .header__title
                 h1.h1 STÜSSY2014
                 p.subtitle.header__subtitle shop now
         .header__arrow
-            img(src="./images/header/Arrow.png", alt="arrow")    
+            img(src="./images/header/Arrow.png" alt="arrow")    
