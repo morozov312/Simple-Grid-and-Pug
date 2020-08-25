@@ -15,9 +15,15 @@ footer.footer
                 li
                     a.footer__link(href="#") CONTACT
         .icons
-            svg
-                use(xlink:href="#inst")
-            svg
-                use(xlink:href="#facebook")
-            svg
-                use(xlink:href="#twitter")
+            a.icons__link(href="https://www.instagram.com/" target="__blank")   
+                .icons__item
+                    svg
+                        use(xlink:href="#inst")     
+            a.icons__link(href="https://www.facebook.com/" target="__blank")   
+                .icons__item
+                    svg
+                        use(xlink:href="#facebook")
+            a.icons__link(href="https://twitter.com/" target="__blank")   
+                .icons__item
+                    svg
+                        use(xlink:href="#twitter")

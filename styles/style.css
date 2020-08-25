@@ -217,6 +217,14 @@
   align-items: center;
   max-width: 160px;
 }
+.icons__item {
+  display: flex;
+  justify-content: center;
+}
+.icons__link {
+  height: 100%;
+  display: inline-block;
+}
 .icons svg {
   width: 33.33%;
   height: 1.6em;

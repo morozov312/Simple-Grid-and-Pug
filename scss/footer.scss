@@ -22,9 +22,18 @@
 .icons {
     @include flex-spb;
     max-width: 160px;
+    &__item{
+        display: flex;
+        justify-content: center;
+    }
+    &__link{
+        height: 100%;
+        display: inline-block;
+    }
     svg {
         width: 33.33%;
         height: 1.6em;
+       
         &:hover {
             fill: #f84545;
             transition: fill 0.3s linear;
