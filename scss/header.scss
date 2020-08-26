@@ -12,11 +12,12 @@
     &__top {
         @include flex-spb;
         box-sizing: border-box;
-        padding-left: 2px;
+        padding-left: 5px;
     }
     &__nav {
         width: 100%;
         max-width: 46.6%;
+
     }
     &__list {
         display: flex;

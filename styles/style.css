@@ -72,7 +72,7 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding-left: 2px;
+  padding-left: 5px;
 }
 .header__nav {
   width: 100%;
@@ -305,6 +305,35 @@
 
   .header__intro {
     margin-top: 200px;
+  }
+
+  .instagram {
+    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+  }
+
+  .tablet-hiden {
+    display: none;
+  }
+
+  .footer {
+    height: 250px;
+  }
+  .footer__wrap {
+    flex-direction: column-reverse;
+  }
+  .footer__link {
+    font-size: 14px;
+  }
+  .footer__ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__ul li {
+    margin: 6px 0;
+  }
+
+  .icons {
+    margin-top: 30px;
   }
 }
 @media (max-width: 767px) {
