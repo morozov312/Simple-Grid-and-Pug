@@ -62,6 +62,7 @@
   background-position: center;
   padding-top: 47px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .header__wrap {
   position: relative;
@@ -85,7 +86,8 @@
   font-family: "Proxima Nova";
   font-weight: 600;
   text-transform: uppercase;
-  font-size: calc(14px + 4 * ((100vw - 320px) / 1380));
+  font-size: 18px;
+  line-height: 1em;
   letter-spacing: 7.88px;
   color: #fff;
 }
@@ -112,7 +114,7 @@
   max-width: 100%;
 }
 .logo__img:hover {
-  transform: rotate(360deg);
+  transform: rotate3d(1, 0, 0, 360deg);
   transition: transform 0.6s linear;
 }
 
@@ -136,7 +138,7 @@
 .tiles__item picture source {
   max-width: 100%;
 }
-.tiles__item--left {
+.tiles__item--right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -149,6 +151,9 @@
   z-index: 1;
   bottom: 0;
   left: 38px;
+}
+.tiles__description img {
+  max-width: 100%;
 }
 .tiles__h2 {
   margin-top: 0.6em;
@@ -206,7 +211,8 @@
   font-family: "Proxima Nova";
   font-weight: 600;
   text-transform: uppercase;
-  font-size: calc(14px + 4 * ((100vw - 320px) / 1380));
+  font-size: 18px;
+  line-height: 1em;
   letter-spacing: 7.88px;
   color: #1a1a1a;
 }
@@ -217,9 +223,6 @@
 .footer__ul {
   display: flex;
   justify-content: space-between;
-}
-.footer__link--hover-none:hover {
-  color: inherit;
 }
 
 .icons {
@@ -243,17 +246,59 @@
   transition: fill 0.3s linear;
 }
 
-@media (max-width: 1441px) {
+@media (max-width: 1550px) {
   .content {
     max-width: 1200px;
+  }
+
+  .tiles__description {
+    width: 50%;
   }
 }
 @media (max-width: 1200px) {
   .content {
     max-width: 950px;
   }
+
+  .header__link,
+.footer__link {
+    font-size: 13px;
+  }
+
+  .tiles__wrap {
+    grid-gap: 25px 26px;
+  }
+  .tiles__item--right .tiles__description {
+    width: 50%;
+  }
+  .tiles__item--right .tiles__description img {
+    width: 45%;
+  }
+  .tiles__description img {
+    width: 70%;
+  }
+  .tiles__h3 {
+    font-size: 25px;
+  }
 }
-@media (max-width: 1023px) {
+@media (max-width: 960px) {
+  .content {
+    max-width: 770px;
+  }
+
+  .header__nav {
+    max-width: 60%;
+  }
+
+  .footer__nav {
+    max-width: 80%;
+  }
+
+  .footer__link {
+    font-size: 11px;
+  }
+}
+@media (max-width: 768px) {
   .header__nav {
     display: none;
   }

@@ -1,32 +1,75 @@
-// 4K 
-@media (max-width: $k4) {
-    .content{
+// Lapiop L
+@media (max-width: 1550px) {
+    .content {
         max-width: 1200px;
+    }
+    .tiles__description {
+        width: 50%;
     }
 }
 @media (max-width: 1200px) {
-    .content{
+    .content {
         max-width: 950px;
     }
+    .header__link,
+    .footer__link {
+        font-size: 13px;
+    }
+    .tiles {
+        &__wrap {
+            grid-gap: 25px 26px;
+        }
+        &__item--right {
+            .tiles__description {
+                width: 50%;
+                img {
+                    width: 45%;
+                }
+            }
+        }
+        &__description {
+            img {
+                width: 70%;
+            }
+        }
+        &__h3 {
+            font-size: 25px;
+        }
+    }
 }
-// Tablet 
+// Laptop
+@media (max-width: 960px) {
+    .content {
+        max-width: 770px;
+    }
+    .header__nav {
+        max-width: 60%;
+    }
+    .footer__nav {
+        max-width: 80%;
+    }
+    .footer__link{
+        font-size: 11px;
+    }
+}
+// Tablet
 @media (max-width: $tablet) {
-    .header__nav{
+    .header__nav {
         display: none;
     }
-    .header__intro{
+    .header__intro {
         margin-top: 200px;
     }
 }
-// MobileL 
+// MobileL
 @media (max-width: $mobileL) {
-    .header__logo{
+    .header__logo {
         width: 45%;
     }
 }
-// MobileM 
+// MobileM
 @media (max-width: $mobileM) {
 }
-// MobileS 
+// MobileS
 @media (max-width: $mobileS) {
 }

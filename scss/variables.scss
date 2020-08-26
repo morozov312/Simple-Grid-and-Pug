@@ -3,7 +3,8 @@
     font-family: "Proxima Nova";
     font-weight: 600;
     text-transform: uppercase;
-    @include adaptive-font(18, 14);
+    font-size: 18px;
+    line-height: 1em;
     letter-spacing: 7.88px;
     color: $color;
     &:hover {
@@ -14,7 +15,7 @@
 // !!! my variables templates !!!
 // breakpoints, desktop first
 $k4: 1441px; // min
-$tablet: 1023px; // max
+$tablet: 768px; // max
 $mobileL: 767px; // max
 $mobileM: 424px; // max
 $mobileS: 376px; // max

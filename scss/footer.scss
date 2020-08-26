@@ -15,9 +15,6 @@
         display: flex;
         justify-content: space-between;
     }
-    &__link--hover-none:hover {
-        color: inherit;
-    }
 }
 .icons {
     @include flex-spb;
