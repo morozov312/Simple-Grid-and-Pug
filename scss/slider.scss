@@ -4,10 +4,15 @@
     flex-direction: column;
     height: 100%;
     .slick {
-        &-slider{
+        .draggable {
+            height: 100%;
+        }
+        &-slider {
             height: 100%;
         }
         &-slide {
+            width: 100% !important;
+            min-width: 0;
             display: flex;
             align-items: center;
         }
@@ -17,9 +22,11 @@
             margin: 0 auto;
         }
         &-track {
+            min-width: 0;
             display: flex;
             align-items: center;
             justify-content: center;
+            height: 100%;
         }
         &-dots {
             display: flex;
@@ -50,6 +57,7 @@
         box-sizing: border-box;
         display: flex;
         justify-content: center;
+        min-width: 0;
         &--right {
             height: 100%;
             .tiles__item {

@@ -424,10 +424,15 @@
     flex-direction: column;
     height: 100%;
   }
+  .slider .slick .draggable {
+    height: 100%;
+  }
   .slider .slick-slider {
     height: 100%;
   }
   .slider .slick-slide {
+    width: 100% !important;
+    min-width: 0;
     display: flex;
     align-items: center;
   }
@@ -437,9 +442,11 @@
     margin: 0 auto;
   }
   .slider .slick-track {
+    min-width: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
   }
   .slider .slick-dots {
     display: flex;
@@ -466,6 +473,7 @@
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    min-width: 0;
   }
   .tiles__item--right {
     height: 100%;
