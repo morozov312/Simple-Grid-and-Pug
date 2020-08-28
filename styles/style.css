@@ -485,6 +485,14 @@
   }
 }
 @media (max-width: 375px) {
+  .instagram {
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
   .tiles__description {
     left: 15px;
   }
