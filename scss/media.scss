@@ -23,13 +23,13 @@
             .tiles__description {
                 width: 50%;
                 img {
-                    width: 45%;
+                    max-width: 45%;
                 }
             }
         }
         &__description {
             img {
-                width: 70%;
+                max-width: 70%;
             }
         }
         &__h3 {
@@ -60,6 +60,9 @@
     .header__intro {
         margin-top: 200px;
     }
+    .tiles{
+        padding: 0;
+    }
     .instagram{
         grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     }
@@ -85,6 +88,7 @@
     .icons {
         margin-top: 30px;
     }
+    @import "slider.scss";
 }
 // MobileL
 @media (max-width: $mobileL) {

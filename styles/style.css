@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import "reset.css";
+@import "slick.css";
+@import "slik-theme.css";
 @font-face {
   font-family: "Proxima Nova Light";
   src: url("../fonts/Proxima_Nova_light/fonts/proxima_nova_light.eot");
@@ -153,7 +155,7 @@
   left: 38px;
 }
 .tiles__description img {
-  max-width: 100%;
+  object-fit: cover;
 }
 .tiles__h2 {
   margin-top: 0.6em;
@@ -272,10 +274,10 @@
     width: 50%;
   }
   .tiles__item--right .tiles__description img {
-    width: 45%;
+    max-width: 45%;
   }
   .tiles__description img {
-    width: 70%;
+    max-width: 70%;
   }
   .tiles__h3 {
     font-size: 25px;
@@ -307,6 +309,10 @@
     margin-top: 200px;
   }
 
+  .tiles {
+    padding: 0;
+  }
+
   .instagram {
     grid-template: repeat(2, 1fr)/repeat(3, 1fr);
   }
@@ -334,6 +340,51 @@
 
   .icons {
     margin-top: 30px;
+  }
+
+  .slider {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .slider .slick-slide {
+    display: flex;
+    align-items: center;
+  }
+  .slider .slick-list {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .slider .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider .slick-dots {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .slider .slick-dots button {
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    background-color: #000000d2;
+    width: 10px;
+    height: 10px;
+  }
+  .slider .slick-dots .slick-active button {
+    background-color: #f84545ea;
+  }
+
+  .tiles__item {
+    display: flex;
+    justify-content: center;
+  }
+  .tiles__item--right .tiles__item {
+    width: 90%;
+    margin: 20px 0;
   }
 }
 @media (max-width: 767px) {

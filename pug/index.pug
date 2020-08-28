@@ -2,13 +2,13 @@ doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title ICNDY
         //- CEO
-        meta(name="description", content=" ")
-        meta(name="keywords", content=" ")
+        meta(name="description" content=" ")
+        meta(name="keywords" content=" ")
         //- styles
-        link(rel="stylesheet", href="styles/style.css")
+        link(rel="stylesheet" href="styles/style.css")
     body
     // svg-sprites 
     svg(display="none")
@@ -31,4 +31,7 @@ html(lang="en")
         include ./tiles.pug
         include ./instagram.pug
     include ./footer.pug
-    
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+    script(type="text/javascript" src="js/slick.min.js")
+    script(src="js/slider.js")
+
