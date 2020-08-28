@@ -79,7 +79,7 @@
             align-items: center;
             li {
                 margin: 20px 0;
-                .header__link{
+                .header__link {
                     font-size: 30px;
                 }
             }
@@ -88,10 +88,16 @@
     .tiles {
         padding: 0;
     }
+    .h2 {
+        font-size: 40px;
+    }
+    .h3 {
+        font-size: 20px;
+    }
     .instagram {
         grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     }
-    .tablet-hiden {
+    .tablet-hidden {
         display: none;
     }
     .footer {
@@ -117,10 +123,29 @@
 }
 // MobileL
 @media (max-width: $mobileL) {
+    .h2 {
+        font-size: 30px;
+    }
+    .h3 {
+        font-size: 15px;
+    }
 }
 // MobileM
 @media (max-width: $mobileM) {
+    .tiles__description {
+        left: 15px;
+        img {
+            max-width: 50% !important;
+        }
+    }
 }
 // MobileS
 @media (max-width: $mobileS) {
+    .logo__img {
+        max-width: 55%;
+    }
+    .h2 {
+        font-size: 25px;
+    }
+
 }

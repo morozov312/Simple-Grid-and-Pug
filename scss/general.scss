@@ -54,10 +54,11 @@
 }
 .h2 {
 	@extend .h1;
+	font-size: 60px;
 	letter-spacing: 0.34em;
 }
 .h3 {
 	@extend .h1;
-	@include adaptive-font(40, 24);
+	font-size: 40px;
 	letter-spacing: 0.4em;
 }
