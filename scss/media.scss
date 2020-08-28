@@ -60,13 +60,38 @@
     .header__intro {
         margin-top: 200px;
     }
-    .tiles{
+    .logo__img {
+        max-width: 70%;
+    }
+    .burger {
+        display: block;
+    }
+    .hidden-title {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        .header__list {
+            flex-direction: column;
+            align-items: center;
+            li {
+                margin: 20px 0;
+                .header__link{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .tiles {
         padding: 0;
     }
-    .instagram{
+    .instagram {
         grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     }
-    .tablet-hiden{
+    .tablet-hiden {
         display: none;
     }
     .footer {
@@ -92,9 +117,6 @@
 }
 // MobileL
 @media (max-width: $mobileL) {
-    .header__logo {
-        width: 45%;
-    }
 }
 // MobileM
 @media (max-width: $mobileM) {

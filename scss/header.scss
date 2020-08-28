@@ -23,6 +23,9 @@
         display: flex;
         justify-content: space-between;
     }
+    &__burger{
+        margin-right: 35px;
+    }
     &__link {
         @include link(#fff);
     }
