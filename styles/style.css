@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "reset.css";
+@import "reset.min.css";
 @font-face {
   font-family: "Proxima Nova Light";
   src: url("../fonts/Proxima_Nova_light/fonts/proxima_nova_light.eot");
