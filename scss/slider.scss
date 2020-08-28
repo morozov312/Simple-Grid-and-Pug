@@ -1,0 +1,51 @@
+.slider {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .slick {
+        &-slide {
+            display: flex;
+            align-items: center;
+        }
+        &-list {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+        &-track {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-dots {
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            button {
+                border: none;
+                border-radius: 50%;
+                font-size: 0;
+                background-color: #000000d2;
+                width: 10px;
+                height: 10px;
+            }
+            .slick-active {
+                button {
+                    background-color: #f84545ea;
+                }
+            }
+        }
+    }
+}
+.tiles {
+    &__item {
+        display: flex;
+        justify-content: center;
+        &--right {
+            .tiles__item {
+                width: 90%;
+                margin: 20px 0;
+            }
+        }
+    }
+}
